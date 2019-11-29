@@ -15,8 +15,8 @@
     }
   ],
   "require": {
-    "beecom/module-core": "*",
-    "beecom/magento-2-owlcarousel": "^1.0"
+    "beecomprg/module-core": "*",
+    "beecomprg/magento2-owlcarousel": "^1.0"
   },
   "autoload": {
     "files": [
