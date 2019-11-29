@@ -13,7 +13,7 @@ Fully written in jQuery, touch enabled extension based on OWL Carousel that lets
 Run the following command in Magento 2 root folder
 
 ```
-composer require beecom/magento-2-better-slider
+composer require beecomprg/magento-2-better-slider
 php bin/magento setup:upgrade
 php bin/magento setup:static-content:deploy
 ```
