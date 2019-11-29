@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Beecom_BetterSlider extension
+ *                     NOTICE OF LICENSE
+ * 
+ *                     This source file is subject to the Beecom License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://www.beecom.io/LICENSE.txt
+ * 
+ *                     @category  Beecom
+ *                     @package   Beecom_BetterSlider
+ *                     @copyright Copyright (c) 2016
+ *                     @license   https://www.beecom.io/LICENSE.txt
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Beecom_BetterSlider::banner" title="Banners &amp; Sliders" module="Beecom_BetterSlider" sortOrder="10" resource="Beecom_BetterSlider::banner" parent="Beecom_Core::all"/>
+        <add id="Beecom_BetterSlider::banners" title="Banners" module="Beecom_BetterSlider" sortOrder="10" action="beecom_betterslider/banner" resource="Beecom_BetterSlider::banner" parent="Beecom_BetterSlider::banner"/>
+        <add id="Beecom_BetterSlider::sliders" title="Banner Sliders" module="Beecom_BetterSlider" sortOrder="20" action="beecom_betterslider/slider" resource="Beecom_BetterSlider::slider" parent="Beecom_BetterSlider::banner"/>
+    </menu>
+</config>

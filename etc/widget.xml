@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="beecom_betterslider_slider" class="Beecom\BetterSlider\Block\Widget\Slider">
+        <label translate="true">Banner Slider</label>
+        <description translate="true">Slider with banners</description>
+        <parameters>
+            <parameter name="slider_id" xsi:type="select"
+                       source_model="Beecom\BetterSlider\Model\Config\Source\SliderList"
+                       visible="true" required="true" sort_order="1">
+                <label translate="true">Sider</label>
+            </parameter>
+            <parameter name="autoplay" xsi:type="select" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno" sort_order="2">
+                <label translate="true">Autoplay</label>
+            </parameter>
+            <parameter name="autoplay_timeout" xsi:type="text" visible="true" sort_order="3">
+                <label translate="true">Autoplay timeout</label>
+                <description translate="true">Please specify in seconds the autoplay interval timeout (default: 5 seconds)</description>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

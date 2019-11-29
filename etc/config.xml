@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <beecom_betterslider>
+            <general>
+                <enabled>1</enabled>
+            </general>
+            <image_size>
+                <phone_width>375</phone_width>
+                <phone_height>380</phone_height>
+                <tablet_large_width>960</tablet_large_width>
+                <tablet_large_height>312</tablet_large_height>
+                <tablet_smaller_width>380</tablet_smaller_width>
+                <tablet_smaller_height>185</tablet_smaller_height>
+                <desktop_large_width>1354</desktop_large_width>
+                <desktop_large_height>467</desktop_large_height>
+                <desktop_smaller_width>556</desktop_smaller_width>
+                <desktop_smaller_height>270</desktop_smaller_height>
+            </image_size>
+        </beecom_betterslider>
+    </default>
+</config>

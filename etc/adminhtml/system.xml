@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © GetReady s.r.o. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="beecom" translate="label" sortOrder="0">
+            <label>Beecom</label>
+        </tab>
+        <section id="beecom_betterslider" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <class>separator-top</class>
+            <label>BetterSlider</label>
+            <tab>beecom</tab>
+            <resource>Beecom_BetterSlider::betterslider_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>General Configuration</label>
+                    <field id="enabled" translate="label" type="select" sortOrder="1" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Enable BetterSlider</label>
+                   <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    </field>
+            </group>
+
+            <group id="image_size" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Image Size Configuration</label>
+
+                <field id="phone_width" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Phone Width</label>                    
+                </field>
+                <field id="phone_height" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Phone Height</label>                    
+                </field>
+                <field id="tablet_large_width" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Tablet Large Width</label>                    
+                </field>
+                <field id="tablet_large_height" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Tablet Large Height</label>                    
+                </field>
+                <field id="tablet_smaller_width" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Tablet Smaller Width</label>                    
+                </field>
+                <field id="tablet_smaller_height" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Tablet Smaller Height</label>                    
+                </field>
+                <field id="desktop_large_width" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Desktop Large Width</label>                    
+                </field>
+                <field id="desktop_large_height" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Desktop Large Height</label>                    
+                </field>
+                <field id="desktop_smaller_width" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Desktop Smaller Width</label>                    
+                </field>
+                <field id="desktop_smaller_height" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Desktop Smaller Height</label>                    
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

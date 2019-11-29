@@ -1,0 +1,46 @@
+<?php if ($block->showSlider()):  ?>
+<div class="carousel">
+    <div class="loader">
+        <div class="ph-item pa-0">
+            <div class="ph-col-12 pa-0">
+                <div class="ph-picture" style="height: 320px"></div>
+            </div>
+        </div>
+    </div>
+	<div class="owl-carousel" data-mage-init='
+		<?php echo $block->getOwlConfig() ?>
+	'>
+		<?php foreach ($block->getBanners() as $banner): ?>
+			<?php $url = $banner->getUrl() ? $banner->getUrl() : '#'?>
+			<div class="item">
+				<a class="owl-item-link" href="<?php echo $url; ?>">
+					<picture>
+						<source class="owl-lazy" media="(min-width: 1264px)" data-srcset="<?php echo $banner->getBannerDesktopLargeUrl(); ?>" >
+						<source class="owl-lazy" media="(min-width: 960px)" data-srcset="<?php echo $banner->getBannerDesktopSmallerUrl(); ?>" >
+						<source class="owl-lazy" media="(min-width: 600px)" data-srcset="<?php echo $banner->getBannerTabletLargeUrl(); ?>" >
+						<source class="owl-lazy" media="(min-width: 376px)" data-srcset="<?php echo $banner->getBannerTabletSmallerUrl(); ?>" >
+						<source class="owl-lazy" media="(max-width: 375px)" data-srcset="<?php echo $banner->getBannerPhoneUrl(); ?>" >
+						<img class="owl-lazy" data-src="<?php echo $banner->getBannerTabletSmallerUrl(); ?>">
+					</picture>
+
+                    <?php if ($banner->getCaption() || $banner->getCaptionText()): ?>
+					<div class="owl-carousel-caption <?php echo $block->getCaptionAlignment(); ?>">
+                        <?php if ($banner->getCaption()): ?>
+						    <div class="owl-carousel-caption-title"><?php echo $banner->getCaption(); ?></div>
+                        <?php endif; ?>
+                        <?php if ($banner->getCaptionText()): ?>
+						<div class="owl-carousel-caption-text v-btn secondary-button ml-0">
+                            <div class="v-btn__content">
+                                <?php echo $banner->getCaptionText(); ?>
+                            </div>
+                        </div>
+                        <?php endif; ?>
+					</div>
+                    <?php endif; ?>
+				</a>
+			</div>
+		<?php endforeach; ?>
+
+	</div>
+</div>
+<?php endif; ?>
